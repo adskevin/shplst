@@ -52,5 +52,5 @@
     "last 2 versions",
     "not dead"
   ],
-  "proxy": "https://localhost:44325/api"
+  "proxy": "https://shoplist.cfapps.io/api"
 }

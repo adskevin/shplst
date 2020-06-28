@@ -17,7 +17,7 @@ function find () {
     method: 'GET',
     headers: authHeader()
   }
-  return Vue.axios.get('https://localhost:44325/api/Lists', requestCfg)
+  return Vue.axios.get('https://shoplist.cfapps.io/api/Lists', requestCfg)
 }
 
 function getById (idLista) {
@@ -25,7 +25,7 @@ function getById (idLista) {
     method: 'GET',
     headers: authHeader()
   }
-  return Vue.axios.get(`https://localhost:44325/api/Lists/${idLista}`, requestCfg)
+  return Vue.axios.get(`https://shoplist.cfapps.io/api/Lists/${idLista}`, requestCfg)
 }
 
 function getByListPeople (idUser) {
@@ -33,7 +33,7 @@ function getByListPeople (idUser) {
     method: 'GET',
     headers: authHeader()
   }
-  return Vue.axios.get(`https://localhost:44325/api/Lists/person/${idUser}`, requestCfg)
+  return Vue.axios.get(`https://shoplist.cfapps.io/api/Lists/person/${idUser}`, requestCfg)
 }
 
 function GetListByShared (idUser) {
@@ -41,7 +41,7 @@ function GetListByShared (idUser) {
     method: 'GET',
     headers: authHeader()
   }
-  return Vue.axios.get(`https://localhost:44325/api/Lists/Shared/${idUser}`, requestCfg)
+  return Vue.axios.get(`https://shoplist.cfapps.io/api/Lists/Shared/${idUser}`, requestCfg)
 }
 
 function GetListByMe () {
@@ -49,7 +49,7 @@ function GetListByMe () {
     method: 'GET',
     headers: authHeader()
   }
-  return Vue.axios.get('https://localhost:44325/api/lists/sharedbyme', requestCfg)
+  return Vue.axios.get('https://shoplist.cfapps.io/api/lists/sharedbyme', requestCfg)
 }
 
 function save (lista) {
@@ -57,7 +57,7 @@ function save (lista) {
     method: 'POST',
     headers: authHeader()
   }
-  return Vue.axios.post('https://localhost:44325/api/Lists', lista, requestCfg)
+  return Vue.axios.post('https://shoplist.cfapps.io/api/Lists', lista, requestCfg)
 }
 
 function edit (lista) {
@@ -65,7 +65,7 @@ function edit (lista) {
     method: 'PUT',
     headers: authHeader()
   }
-  return Vue.axios.put(`https://localhost:44325/api/Lists/`, lista, requestCfg)
+  return Vue.axios.put(`https://shoplist.cfapps.io/api/Lists/`, lista, requestCfg)
 }
 
 function _delete (idLista) {
@@ -73,5 +73,5 @@ function _delete (idLista) {
     method: 'DELETE',
     headers: authHeader()
   }
-  return Vue.axios.delete(`https://localhost:44325/api/Lists/${idLista}`, requestCfg)
+  return Vue.axios.delete(`https://shoplist.cfapps.io/api/Lists/${idLista}`, requestCfg)
 }

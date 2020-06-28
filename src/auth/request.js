@@ -1,4 +1,4 @@
-const baseURL = 'https://localhost:44325/api'
+const baseURL = 'https://shoplist.cfapps.io/api'
 
 function getHeaders () {
   const token = localStorage.getItem('token')

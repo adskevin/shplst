@@ -15,7 +15,7 @@ function find () {
     method: 'GET',
     headers: authHeader()
   }
-  return Vue.axios.get('https://localhost:44325/api/Items', requestCfg)
+  return Vue.axios.get('https://shoplist.cfapps.io/api/Items', requestCfg)
 }
 
 function getById (idItems) {
@@ -23,7 +23,7 @@ function getById (idItems) {
     method: 'GET',
     headers: authHeader()
   }
-  return Vue.axios.get(`https://localhost:44325/api/Items/${idItems}`, requestCfg)
+  return Vue.axios.get(`https://shoplist.cfapps.io/api/Items/${idItems}`, requestCfg)
 }
 
 function getByList (idList) {
@@ -31,7 +31,7 @@ function getByList (idList) {
     method: 'GET',
     headers: authHeader()
   }
-  return Vue.axios.get(`https://localhost:44325/api/items/list/${idList}`, requestCfg)
+  return Vue.axios.get(`https://shoplist.cfapps.io/api/items/list/${idList}`, requestCfg)
 }
 
 function save (items) {
@@ -39,7 +39,7 @@ function save (items) {
     method: 'POST',
     headers: authHeader()
   }
-  return Vue.axios.post('https://localhost:44325/api/Items', items, requestCfg)
+  return Vue.axios.post('https://shoplist.cfapps.io/api/Items', items, requestCfg)
 }
 
 function edit (items, idItems) {
@@ -47,7 +47,7 @@ function edit (items, idItems) {
     method: 'POST',
     headers: authHeader()
   }
-  return Vue.axios.put(`https://localhost:44325/api/Items/${idItems}`, items, requestCfg)
+  return Vue.axios.put(`https://shoplist.cfapps.io/api/Items/${idItems}`, items, requestCfg)
 }
 
 function _delete (idItems) {
@@ -55,5 +55,5 @@ function _delete (idItems) {
     method: 'DELETE',
     headers: authHeader()
   }
-  return Vue.axios.delete(`https://localhost:44325/api/Items/${idItems}`, requestCfg)
+  return Vue.axios.delete(`https://shoplist.cfapps.io/api/Items/${idItems}`, requestCfg)
 }

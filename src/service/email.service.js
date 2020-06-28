@@ -9,12 +9,12 @@ function verificaEmail (verifica) {
   const requestCfg = {
     method: 'POST'
   }
-  return Vue.axios.post('https://localhost:44325/api/People/verif', verifica, requestCfg)
+  return Vue.axios.post('https://shoplist.cfapps.io/api/People/verif', verifica, requestCfg)
 }
 
 function recuperaSenha (esqueciSenha) {
   const requestCfg = {
     method: 'POST'
   }
-  return Vue.axios.post('https://localhost:44325/api/EmailSender/sendpass', esqueciSenha, requestCfg)
+  return Vue.axios.post('https://shoplist.cfapps.io/api/EmailSender/sendpass', esqueciSenha, requestCfg)
 }
