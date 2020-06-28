@@ -75,7 +75,7 @@ export default {
   },
   methods: {
     voltarLogin() {
-      this.$router.push("/");
+      this.$router.push("/avisaEmail");
     },
     savePeople() {
       this.errors = [];

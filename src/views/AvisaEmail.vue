@@ -14,15 +14,15 @@
             <p>Por favor, verifique sua caixa de e-mail, pois encaminhamos um e-mail para você poder fazer a verificação da sua conta de usuário.</p>
             <img src="../assets/verificacaoEmail.jpg" alt="Validação de E-mail" />
           </b-col>
-          <b-col cols="12">
+          <!-- <b-col cols="12">
             <b-button type="submit" block class="mt-4" variant="primary" href="/home">Logar</b-button>
-          </b-col>
-          <b-col cols="12">
+          </b-col> -->
+          <!-- <b-col cols="12">
             <small class="form-text text-muted mt-3 text-center">
               <a href="/">Clique Aqui</a>
               para reencaminhar o e-mail para fazer a verificação
             </small>
-          </b-col>
+          </b-col> -->
         </b-form-row>
       </b-form>
     </b-card>
